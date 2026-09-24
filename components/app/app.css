@@ -1,0 +1,61 @@
+
+.app {
+    background-color: #add8e6;
+    padding: 40px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.app * {
+    box-sizing: border-box;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.page__title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #306735;
+}
+
+.page__title {
+    font-size: 60px;
+    color: #fff;
+}
+
+.page__title-img {
+    max-width: 400px;
+    width: 100%;
+}
+
+.episodes-list__content {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    background: #306735;
+}
+
+@media screen and (max-width: 750px) {
+    .app {
+        padding: 0;
+    }
+
+    .page__title-block {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+
+    .page__title {
+        font-size: 40px;
+        text-align: center;
+    }
+}

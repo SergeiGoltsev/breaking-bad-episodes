@@ -1,0 +1,117 @@
+.random-episode-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #306735;
+}
+
+.random-episode__button {
+    width: 100px;
+    height: 100px;
+    background: #01b6d9;
+    color: #fff;
+    border: none;
+    flex-shrink: 0;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.random-episode__button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.random-episode-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.random-episode__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.random-episode__img {
+    width: 60%;
+}
+
+.random-episode__text-block {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff
+}
+
+.random-episode__name {
+    font-size: 40px;
+    margin: 0;
+    color: #fff;
+}
+
+.random-episode__text {
+    font-size: 20px;
+    margin: 0;
+}
+
+.random-episode__link {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.random-episode__link:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.random-episode__summary {
+    font-size: 20px;
+    margin: 0;
+    color: #fff
+}
+
+@media screen and (max-width: 900px) {
+    .random-episode-block {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .random-episode__top {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .random-episode__img {
+        width: 100%;
+    }
+
+    .random-episode__text-block {
+        width: 100%;
+    }
+
+    .random-episode__name {
+        font-size: 22px;
+    }
+
+    .random-episode__text {
+        font-size: 16px;
+    }
+
+    .random-episode__summary {
+        font-size: 16px;
+    }
+
+    .random-episode__button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
