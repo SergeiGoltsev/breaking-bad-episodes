@@ -1,0 +1,72 @@
+import ErrorMessage from "../errorMessage/ErrorMessage";
+import Spinner from "../spinner/Spinner";
+
+{
+id: episode.id,
+name: episode.name,
+summary: episode.summary ? episode.summary.replace(/<p>|<\/p>/g, "") : "Описание эпизода отсутствует",
+    image: episode.image.original,
+    homepage: episode.url,
+    season: episode.season,
+    number: episode.number,
+    date: episode.airdate,
+    time: episode.runtime,
+}
+
+    const min = 47840;
+    const max = 47925;
+    const id = Math.floor(Math.random() * (max - min + 1) + min);
+
+<div className='random-episode-block'>
+    <div className="random-episode">
+        {spinner}
+        {errorMessage}
+        {content}
+    </div>
+    <button className="random-episode__button">Try again</button>
+</div>
+
+<div className='random-episode-content'>
+    <div className='random-episode__top'>
+        <img className='random-episode__img' src={image} alt={name}/>
+        <div className='random-episode__text-block'>
+            <p className='random-episode__name'>{name}</p>
+            <p className='random-episode__text'>Season: {season}</p>
+            <p className='random-episode__text'>Episode № {number}</p>
+            <p className='random-episode__text'>Release: {date}</p>
+            <p className='random-episode__text'>Duration: {time} m</p>
+            <a className='random-episode__link' href={homepage}>Home Page</a>
+        </div>
+    </div>
+    <p className='random-episode__summary'>{summary}</p>
+</div>
+
+
+<li className='episodes-list__item'>
+<img className='episodes-list__item-img' src={item.image} alt={item.name}/>
+<p className='episodes-list__item-name'>{item.name}</p>
+</li>
+
+<div className='episodes-list-block'>
+    <ul className='episodes-list'>
+        {errorMessage}
+        {spinner}
+        {content}
+    </ul>
+    <button className='episodes-list__button'>
+    load more
+    </button>
+</div>
+
+
+<div className='episodes-info'>
+    <img className='episodes-info__img' src={image} alt={name}/>
+    <p className='episodes-info__name'>{name}</p>
+    <p className='episodes-info__text'>season {season} - episode {number}</p>
+    <p className='episodes-info__text'>{date}</p>
+    <p className='episodes-info__text'>{summary}</p>
+</div>
+
+<div className='episodes-info'>
+    <div className='episodes-info__text'>Select an episode</div>
+</div>

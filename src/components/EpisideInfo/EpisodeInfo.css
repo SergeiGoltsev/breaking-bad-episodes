@@ -1,0 +1,39 @@
+.episodes-info {
+    background: #306735;
+    width: 100%;
+    max-width: 400px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+
+    position: sticky;
+    top: 0; /* Отступ от верха экрана, когда блок зафиксируется (можно поставить 0) */
+}
+
+.episodes-info__img {
+    width: 100%;
+}
+
+.episodes-info__name  {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.episodes-info__text {
+    font-size: 18px;
+    margin: 0;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+    .episodes-info {
+        max-width: 250px;
+        padding: 10px;
+        flex-shrink: 1;
+    }
+}
